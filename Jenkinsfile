@@ -3,7 +3,7 @@ pipeline{
 agent any
 
 environment{
-    version_name ="1.08"
+    VERSION_NAME ="1.08"
 }
 
 stages{
@@ -12,7 +12,7 @@ stage("compile"){
 steps
 {
   bat "javac Test.java"
-  bat 'echo "${version_name}"'
+  bat 'echo "${VERSION_NAME}"'
 }
 }
 
